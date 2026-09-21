@@ -6,7 +6,7 @@ pipeline {
     environment {
         // Исправлено: добавлены двойные слэши для экранирования пути в Windows
         PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
-        DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
+        DOCKERHUB_CREDENTIALS_ID = 'Andrei_Docker_Id'
         DOCKERHUB_REPO = 'andrei1033/cal_3012'
         DOCKER_IMAGE_TAG = 'latest'
     }
