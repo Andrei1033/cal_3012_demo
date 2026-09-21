@@ -19,7 +19,7 @@ pipeline {
         }
         stage ('build'){
             steps{
-                bat 'C:\\Users\\Andrei\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe" build -t "andrei1033/cal_3012:latest'
+                bat 'mvn clean install'
             }
         }
 
