@@ -4,7 +4,8 @@ pipeline {
         maven 'Maven3'
     }
     environment {
-        PATH = "C:\Program Files\Docker\Docker\resources\bin;${env.PATH}"
+        // Исправлено: добавлены двойные слэши для экранирования пути в Windows
+        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
         DOCKERHUB_REPO = 'andrei1033/cal_3012'
         DOCKER_IMAGE_TAG = 'latest'
